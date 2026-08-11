@@ -18,8 +18,8 @@ Additional documentation about how this group operates:
 
 ## Running an OCI Image
 
-The OCI Image Format partner project is the [OCI Runtime Spec project](https://github.com/opencontainers/runtime-spec).
-The Runtime Specification outlines how to run a "[filesystem bundle](https://github.com/opencontainers/runtime-spec/blob/main/bundle.md)" that is unpacked on disk.
+The OCI Image Format partner project is the [OCI Runtime Spec project](https://github.com/Unity-Billal-mesloub/runtime-spec).
+The Runtime Specification outlines how to run a "[filesystem bundle](https://github.com/Unity-Billal-mesloub/runtime-spec/blob/main/bundle.md)" that is unpacked on disk.
 At a high-level an OCI implementation would download an OCI Image then unpack that image into an OCI Runtime filesystem bundle.
 At this point the OCI Runtime Bundle would be run by an OCI Runtime.
 
@@ -32,7 +32,7 @@ To support this UX the OCI Image Format contains sufficient information to launc
 
 ## Distributing an OCI Image
 
-The [OCI Distribution Spec Project](https://github.com/opencontainers/distribution-spec/) defines an API protocol to facilitate and standardize the distribution of content.
+The [OCI Distribution Spec Project](https://github.com/Unity-Billal-mesloub/distribution-spec/) defines an API protocol to facilitate and standardize the distribution of content.
 This API includes support for pushing and pulling OCI images to an OCI conformant registry.
 
 ## FAQ
@@ -46,14 +46,7 @@ Find more [FAQ on the OCI site](https://www.opencontainers.org/faq).
 
 ## Roadmap
 
-The [GitHub milestones](https://github.com/opencontainers/image-spec/milestones) lay out the path to the future improvements.
-
-## Contributing
-
-Development happens on GitHub for the spec.
-Issues are used for bugs and actionable items and longer discussions can happen on the [mailing list](#mailing-list).
-
-The specification and code is licensed under the Apache 2.0 license found in the `LICENSE` file of this repository.
+The [GitHub milestones](https://github.com/Unity-Billal-mesloub/image-spec/milestones) lay out the path to the future improvements.
 
 ### Discuss your design
 
@@ -65,15 +58,6 @@ It also guarantees that the design is sound before code is written; a GitHub pul
 
 Typos and grammatical errors can go straight to a pull-request.
 When in doubt, start on the [mailing-list](#mailing-list).
-
-### Meetings
-
-Please see the [OCI org repository README](https://github.com/opencontainers/org#meetings) for the most up-to-date information on OCI contributor and maintainer meeting schedules.
-You can also find links to meeting agendas and minutes for all prior meetings.
-
-### Mailing List
-
-You can subscribe and join the mailing list on [Google Groups](https://groups.google.com/a/opencontainers.org/forum/#!forum/dev).
 
 ### Markdown style
 
@@ -152,4 +136,4 @@ Read more on [How to Write a Git Commit Message](https://chris.beams.io/posts/gi
    - If there was important/useful/essential conversation or information, copy or include a reference
 8. When possible, one keyword to scope the change in the subject (i.e. "README: ...", "runtime: ...")
 
-[code-of-conduct]: https://github.com/opencontainers/org/blob/master/CODE_OF_CONDUCT.md
+
