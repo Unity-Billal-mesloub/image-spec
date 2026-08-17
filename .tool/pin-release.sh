@@ -1,19 +1,5 @@
 #!/bin/sh
 
-# Copyright the Open Container Initiative Contributors.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 set -e
 cd "$(dirname $0)/.."
 
@@ -22,7 +8,7 @@ if ! { command -v jq && command -v find && command -v sed; } > /dev/null; then
   exit 1
 fi
 
-runtime_tag=$(git ls-remote https://github.com/opencontainers/runtime-spec.git 'refs/tags/v[0-9]*' \
+runtime_tag=$(git ls-remote https://github.com/Unity-Billal-mesloub/runtime-spec.git 'refs/tags/v[0-9]*' \
 	| jq -rnR '
 		[
 			inputs
@@ -34,7 +20,7 @@ runtime_tag=$(git ls-remote https://github.com/opencontainers/runtime-spec.git '
 		| .[-1] # we only care about "latest" (the last entry)
 	')
 
-distribution_tag=$(git ls-remote https://github.com/opencontainers/distribution-spec.git 'refs/tags/v[0-9]*' \
+distribution_tag=$(git ls-remote https://github.com/Unity-Billal-mesloub/distribution-spec.git 'refs/tags/v[0-9]*' \
 	| jq -rnR '
 		[
 			inputs
@@ -47,6 +33,6 @@ distribution_tag=$(git ls-remote https://github.com/opencontainers/distribution-
 	')
 
 find . -name '*.md' -exec sed -i \
-  -e "s#https://github.com/opencontainers/runtime-spec/blob/main/#https://github.com/opencontainers/runtime-spec/blob/${runtime_tag}/#g" \
-  -e "s#https://github.com/opencontainers/distribution-spec/blob/main/#https://github.com/opencontainers/distribution-spec/blob/${distribution_tag}/#g" \
+  -e "s#https://github.com/Unity-Billal-mesloub/runtime-spec/blob/main/#https://github.com/Unity-Billal-mesloub/runtime-spec/blob/${runtime_tag}/#g" \
+  -e "s#https://github.com/Unity-Billal-mesloub/distribution-spec/blob/main/#https://github.com/Unity-Billal-mesloub/distribution-spec/blob/${distribution_tag}/#g" \
   '{}' \;
