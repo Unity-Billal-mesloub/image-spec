@@ -42,7 +42,7 @@ Typically, these manifests may provide different implementations of the image, p
 
 ![build diagram](img/build-diagram.png)
 
-Once built the OCI Image can then be discovered by name, downloaded, verified by hash, trusted through a signature, and unpacked into an [OCI Runtime Bundle](https://github.com/opencontainers/runtime-spec/blob/main/bundle.md).
+Once built the OCI Image can then be discovered by name, downloaded, verified by hash, trusted through a signature, and unpacked into an [OCI Runtime Bundle](https://github.com/Unity-Billal-mesloub/runtime-spec/blob/main/bundle.md).
 
 ![runtime diagram](img/run-diagram.png)
 
@@ -67,4 +67,4 @@ Future versions of this specification may include the following OPTIONAL feature
 - Naming that is federated based on DNS and can be delegated
 
 [c99-unspecified]: https://www.open-std.org/jtc1/sc22/wg14/www/C99RationaleV5.10.pdf#page=18
-[runtime-spec]: https://github.com/opencontainers/runtime-spec
+[runtime-spec]: https://github.com/Unity-Billal-mesloub/runtime-spec
