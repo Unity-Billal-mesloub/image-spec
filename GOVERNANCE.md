@@ -67,4 +67,3 @@ For example:
 
 > [image-spec adopted]: Tag 0647920 as 1.0.0-rc (+6 -0 #3)
 
-[charter]: https://github.com/opencontainers/tob/blob/main/CHARTER.md
