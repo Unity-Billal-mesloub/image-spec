@@ -2,7 +2,7 @@
 
 The release process hopes to encourage early, consistent consensus-building during project development.
 The mechanisms used are regular community communication on the mailing list about progress, scheduled meetings for issue resolution and release triage, and regularly paced and communicated releases.
-Releases are proposed and adopted or rejected using the usual [project governance](GOVERNANCE.md) rules and procedures.
+Releases are proposed and adopted or rejected using the usual [project governance] rules and procedures.
 
 An anti-pattern that we want to avoid is heavy development or discussions "late cycle" around major releases.
 We want to build a community that is involved and communicates consistently through all releases instead of relying on "silent periods" as a judge of stability.
@@ -34,8 +34,8 @@ Maintainers MUST send updates to the <dev@opencontainers.org> with results of th
 Before the specification reaches v1.0.0, the meetings SHOULD be weekly.
 Once a specification has reached v1.0.0, the maintainers may alter the cadence, but a meeting MUST be held within four weeks of the previous meeting.
 
-The release plans, corresponding milestones and estimated due dates MUST be published on GitHub (e.g. <https://github.com/opencontainers/image-spec/milestones>).
-GitHub milestones and issues are only used for community organization and all releases MUST follow the [project governance](GOVERNANCE.md) rules and procedures.
+The release plans, corresponding milestones and estimated due dates MUST be published on GitHub (e.g. <https://github.com/Unity-Billal-mesloub/image-spec/milestones>).
+GitHub milestones and issues are only used for community organization and all releases MUST follow the [project governance] rules and procedures.
 
 ### Timelines
 
@@ -95,9 +95,9 @@ $sig
   - [ ] git checkout the release tag, like `git checkout $version`
   - [ ] `make docs`
   - [ ] rename the output PDF and HTML file to include version, like `mv output/oci-image-spec.pdf output/oci-image-spec-$version.pdf``
-  - [ ] attach these docs to the release on <https://github.com/opencontainers/image-spec/releases>
+  - [ ] attach these docs to the release on <https://github.com/Unity-Billal-mesloub/image-spec/releases>
   - [ ] link to the the VOTE thread and include the passing vote count
   - [ ] link to the pull request that merged the release
-- [ ] add release notes to the website <https://github.com/opencontainers/opencontainers.org/tree/main/content/release-notices>
+- [ ] add release notes to the website <https://github.com/Unity-Billal-mesloub/opencontainers.org/tree/main/content/release-notices>
 
 [charter]: https://github.com/opencontainers/tob/blob/main/CHARTER.md
