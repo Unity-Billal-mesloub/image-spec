@@ -4,7 +4,7 @@ package v1
 import (
 	"time"
 
-	digest "github.com/opencontainers/go-digest"
+	digest "github.com/Unity-Billal-mesloub/go-digest"
 )
 
 // ImageConfig defines the execution parameters which should be used as a base when running a container using an image.
